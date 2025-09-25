@@ -1,0 +1,26 @@
+{% extends 'core/base.html' %}
+{% block title %}Admin Dashboard | PetConnect{% endblock %}
+{% block content %}
+<h1><i class="fas fa-user-shield"></i> Admin Dashboard</h1>
+<p>Manage users, pets, and adoptions from here.</p>
+<div class="dashboard-grid">
+	<div class="dashboard-card">
+		<i class="fas fa-users"></i>
+		<h2>Users</h2>
+		<p>View and manage all users.</p>
+		<a href="/admin/core/user/" class="button">Manage Users</a>
+	</div>
+	<div class="dashboard-card">
+		<i class="fas fa-dog"></i>
+		<h2>Pets</h2>
+		<p>View and manage all pets.</p>
+		<a href="/admin/core/pet/" class="button">Manage Pets</a>
+	</div>
+	<div class="dashboard-card">
+		<i class="fas fa-heart"></i>
+		<h2>Adoptions</h2>
+		<p>View and manage adoptions.</p>
+		<a href="/admin/core/adoption/" class="button">Manage Adoptions</a>
+	</div>
+</div>
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends 'core/base.html' %}
+{% block title %}Adopt a Pet | PetConnect{% endblock %}
+{% block content %}
+<h1><i class="fas fa-dog"></i> Adopt a Pet</h1>
+<p>Find your new best friend today!</p>
+<div class="dashboard-grid">
+	{% comment %} Example pet cards. Replace with dynamic content in views. {% endcomment %}
+	<div class="dashboard-card">
+		<i class="fas fa-cat"></i>
+		<h2>Whiskers</h2>
+		<p>2-year-old playful cat</p>
+		<a href="#" class="button">Adopt</a>
+	</div>
+	<div class="dashboard-card">
+		<i class="fas fa-dog"></i>
+		<h2>Buddy</h2>
+		<p>3-year-old friendly dog</p>
+		<a href="#" class="button">Adopt</a>
+	</div>
+</div>
+{% endblock %}
