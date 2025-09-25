@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-7^503_r-*lr%m7t(*orygirn0q6t^l)w@nk+_$c2eti4d@+jv#
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -48,6 +48,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',   
+
 ]
 
 ROOT_URLCONF = 'PetConnect.urls'
@@ -126,3 +128,7 @@ import os
 # Media files configuration
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+import os 
+STATIC_URL = '/static/' 
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
